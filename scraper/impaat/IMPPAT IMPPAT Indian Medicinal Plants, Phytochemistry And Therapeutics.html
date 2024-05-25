@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style>
+    HTML {
+      margin: 0 !important;
+      border: none !important;
+    }
+
+    .dragdrop-handle {
+      cursor: move;
+      user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+    }
+
+    .B {
+      zoom: 1;
+    }
+
+    .dragdrop-dragging {
+      zoom: normal;
+    }
+
+    .I {
+      border: 1px dashed #1e90ff;
+      margin: 0 !important;
+      zoom: 1;
+      z-index: 100;
+    }
+
+    .dragdrop-flow-panel-positioner {
+      color: #1e90ff;
+      display: inline;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .dragdrop-proxy {
+      background-color: #7af;
+    }
+
+    .dragdrop-selected,
+    .dragdrop-dragging,
+    .dragdrop-proxy {
+      filter: alpha(opacity \= 30);
+      opacity: 0.3;
+    }
+
+    .dragdrop-movable-panel {
+      z-index: 200;
+      margin: 0 !important;
+      border: none !important;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/jquery-3.3.1.min.js"
+    crossorigin="anonymous"></script>
+  <!--<link rel="stylesheet" href="/imppat/ChemDoodleWeb/install/ChemDoodleWeb.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+  <link rel="stylesheet" type="text/css"
+    href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8"
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/jquery.dataTables.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/jsme.nocache.js"></script>
+  <link rel="stylesheet"
+    href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/jsa.css">
+  <link rel="stylesheet"
+    href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/chrome.css">
+  <link rel="stylesheet"
+    href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/mosaic.css">
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/C10E29B5EC0A8B8F17E4DBDDCCB182D9.cache.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">-->
+  <link href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/css_003.css"
+    rel="stylesheet">
+  <link href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/css.css"
+    rel="stylesheet">
+  <link href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/css_002.css"
+    rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="IMPPAT (Indian Medicinal Plants, Phytochemistry And its Therapeutics)">
+  <meta name="author" content="Areejit Samal (asamal@imsc.res.in)">
+  <meta name="generator" content="HTML PHP MYSQL CSS JS">
+  <title>
+    IMPPAT | IMPPAT: Indian Medicinal Plants, Phytochemistry And Therapeutics
+  </title>
+  <link rel="icon"
+    href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/IMPPATlogo.jpg"
+    type="image/jpg" sizes="16x16">
+
+  <link
+    href="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/bootstrap.min.css"
+    rel="stylesheet" crossorigin="anonymous">
+
+  <!--<link href="/imppat/js/tablesorter-master/dist/css/theme.bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">-->
+
+  <!--[if IE 8 ]>    <html class="ie8 ielt9"> <![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+
+</head>
+
+<body>
+  <div class="container">
+    <header id="header" class="clearfix">
+      <div class="sectionlogo">
+        <a href="https://cb.imsc.res.in/imppat/home" title="Home"><img
+            src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/IMPPATlogo.jpg"></a>
+        <strong><a href="https://cb.imsc.res.in/imppat/home" title="Home" style="font-family:Roboto">IMPPAT: Indian
+            Medicinal Plants, Phytochemistry And Therapeutics</a></strong>
+        <h6><strong style="font-family:Roboto">a curated database</strong></h6>
+      </div>
+    </header>
+
+  </div>
+  <nav class="navbar sticky-top navbar-expand-lg bg-color1 navbar-dark">
+    <div class="container" style="font-family:Roboto;font-size:18px">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01" role="tablist">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="https://cb.imsc.res.in/imppat/"><strong>HOME</strong></a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/#browse"><strong>BROWSE</strong></a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/basicsearch/phytochemical"><strong>BASIC SEARCH</strong></a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/advancedsearch/physicochemicalfilter"><strong>ADVANCED
+                SEARCH</strong></a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/statistics"><strong>STATISTICS</strong></a></li>
+          <li class="nav-item"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/acknowledgement"><strong>ACKNOWLEDGEMENT</strong></a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="/imppat/download"><strong>DOWNLOAD</strong></a></li> -->
+          <li class="nav-item"><a class="nav-link" href="https://cb.imsc.res.in/imppat/help"><strong>HELP</strong></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container" style="font-family:Roboto;font-size:15px">
+    <hr style="height:9pt; visibility:hidden; margin:0; border:0"><br>
+    <div class="chem container-fluid ">
+      <center>
+        <h5 class="col mt-1 pt-1 mb-2 pb-3" style="line-height:1.5"><strong>IMPPAT Phytochemical
+            information:&nbsp;<br>2,4,6-Trimethoxyphenol</strong></h5>
+      </center>
+      <div class="container-fluid justify-content-md-center">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item navitemspl1"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+              role="tab" aria-controls="home" aria-selected="true"><strong>Summary</strong></a></li>
+          <li class="nav-item navitemspl1"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/physicochemicalproperties/IMPHY007416"><strong>Physicochemical</strong></a>
+          </li>
+          <li class="nav-item navitemspl1"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/druglikeproperties/IMPHY007416"><strong>Drug-likeness</strong></a>
+          </li>
+          <li class="nav-item navitemspl1"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/admetproperties/IMPHY007416"><strong>ADMET</strong></a></li>
+          <li class="nav-item navitemspl1"><a class="nav-link"
+              href="https://cb.imsc.res.in/imppat/chemicaldescriptors/IMPHY007416"><strong>Descriptors </strong></a>
+          </li>
+        </ul>
+        <hr style="height:9pt; visibility:hidden; margin:0; border:0">
+        <hr style="height:9pt; visibility:hidden; margin:0; border:0">
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <hr style="height:9pt; visibility:hidden; margin:0; border:0">
+          <div class="row">
+            <div class="col-3"><img
+                src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/IMPHY007416.png"
+                class="figure-img img-fluid shadow p-0 mb-3 bg-white rounded" style="border-radius: 25px;"
+                alt="2,4,6-Trimethoxyphenol"><br>
+              <script type="text/javascript"
+                src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/jmol.html"> </script>
+              <a href="javascript:void(0)"
+                onclick='window.open("https://chemapps.stolaf.edu/jmol/jmol.php?model=COc1cc%28OC%29c%28c%28c1%29OC%29O&amp;width=100%&amp;height=100%","","width=600,height=600,scrollbars=no")'>View
+                3D structure using JSmol</a>
+            </div>
+            <div class="col-8 pt-0 mt-0 ml-2 pl-2" style="line-height:28px;">
+              <center>
+                <h6><strong>Summary</strong></h6>
+              </center>
+              <p></p><strong>IMPPAT Phytochemical identifier:</strong> IMPHY007416<p></p><strong>Phytochemical
+                name:</strong> 2,4,6-Trimethoxyphenol<p></p><strong>Synonymous chemical
+                names:</strong><br>2,4,6-trimethoxyphenol, phenol, 2,4,6-trimethoxy<p></p><strong>External chemical
+                identifiers:</strong><br><a href="https://pubchem.ncbi.nlm.nih.gov/compound/88563">CID:88563</a><a>,
+              </a><a href="https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL225314">ChEMBL:CHEMBL225314</a><a>,
+              </a><a href="https://zinc15.docking.org/substances/ZINC000002566113/">ZINC:ZINC000002566113</a><a>, </a><a
+                href="https://drugs.ncats.io/drug/4MJL0GD54W">FDASRS:4MJL0GD54W</a><a>, </a><a
+                href="https://www.surechembl.org/chemical/SCHEMBL1047550">SureChEMBL:SCHEMBL1047550</a><a>, </a><a
+                href="https://www.molport.com/shop/moleculelink/about-this-molecule/6123289">MolPort-006-123-289</a><a>
+                <hr class="hrcolor">
+                <center>
+                  <h6><strong>Chemical structure information</strong></h6>
+                </center>
+                <p></p><strong>SMILES:</strong><br><text style="word-break: break-word;">COc1cc(OC)c(c(c1)OC)O</text>
+                <p></p><strong>InChI:</strong><br><text
+                  style="word-break: break-word;">InChI=1S/C9H12O4/c1-11-6-4-7(12-2)9(10)8(5-6)13-3/h4-5,10H,1-3H3</text>
+                <p></p><strong>InChIKey:</strong><br>HSJYYLNJWGKZMD-UHFFFAOYSA-N<p></p>
+                <strong>DeepSMILES:</strong><br>COcccOC))ccc6)OC)))O<p></p><strong>Functional groups:</strong><br>cO,
+                cOC
+                <hr class="hrcolor">
+                <center>
+                  <h6><strong>Molecular scaffolds</strong></h6>
+                </center>
+                <p></p><strong>Scaffold Graph/Node/Bond level:</strong><br>c1ccccc1<p></p><strong>Scaffold Graph/Node
+                  level:</strong><br>C1CCCCC1<p></p><strong>Scaffold Graph level:</strong><br>C1CCCCC1
+                <hr class="hrcolor">
+                <center>
+                  <h6><strong>Chemical classification</strong></h6>
+                </center>
+                <p></p><strong>ClassyFire Kingdom:</strong> Organic compounds<p></p><strong>ClassyFire
+                  Superclass:</strong>
+              </a><a href="https://cb.imsc.res.in/imppat/phytochemical-searchsupclass/Benzenoids">Benzenoids<p></p>
+              </a><strong>ClassyFire Class:</strong> Phenols<p></p><strong>ClassyFire Subclass:</strong>
+              Methoxyphenols<p></p><strong>NP Classifier Biosynthetic pathway:</strong> Polyketides<p></p><strong>NP
+                Classifier Superclass:</strong> Phloroglucinols<p></p><strong>NP Classifier Class:</strong> Acyl
+              phloroglucinols<p></p><strong>NP-Likeness score:</strong> 0.486<p></p>
+              <hr class="hrcolor">
+              <center>
+                <h6><strong>Chemical structure download</strong></h6>
+              </center>
+              <div class="buttonlink ml-2"><strong>2D:</strong><a
+                  href="https://cb.imsc.res.in/imppat/images/2D/MOL/IMPHY007416.mol"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>2D MOL</strong></a><a
+                  href="https://cb.imsc.res.in/imppat/images/2D/MOL2/IMPHY007416.mol2"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>2D MOL2</strong></a><a
+                  href="https://cb.imsc.res.in/imppat/images/2D/SDF/IMPHY007416.sdf"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>2D SDF</strong></a><br><strong>3D:</strong><a
+                  href="https://cb.imsc.res.in/imppat/images/3D/MOL/IMPHY007416_3D.mol"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>3D MOL</strong></a><a
+                  href="https://cb.imsc.res.in/imppat/images/3D/MOL2/IMPHY007416_3D.mol2"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>3D MOL2</strong></a><a
+                  href="https://cb.imsc.res.in/imppat/images/3D/SDF/IMPHY007416_3D.sdf"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>3D SDF</strong></a><a
+                  href="https://cb.imsc.res.in/imppat/images/3D/PDB/IMPHY007416_3D.pdb"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>3D PDB</strong></a><a
+                  href="https://cb.imsc.res.in/imppat/images/3D/PDBQT/IMPHY007416_3D.pdbqt"
+                  class="btn m-2 p-2 btn-primary btn-sm"><strong>3D PDBQT</strong></a></div>
+            </div>
+          </div>
+          <hr style="height:9pt; visibility:hidden; margin:0; border:0">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-family: Roboto; display: block;">Top</button>
+  <footer>
+    <div class="footer" style="font-family:Roboto">
+      <!-- <strong>Visitors across the world</strong>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=0e1633&w=300&t=n&d=6OHilj7pI6cgsY5HNMA8Somf7HGEx7StKV8Z1TdBfnM&co=0b4975&cmo=3acc3a&cmn=ff5353&ct=cdd4d9'></script><br> -->
+      <img
+        src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/imsclogo_trilingual_600_new.png"
+        alt="IMSc Logo" style="width: 50px">
+      <br><a href="https://www.imsc.res.in/" target="_blank">The Institute of Mathematical Sciences (IMSc)</a> | <a
+        href="https://www.imsc.res.in/~asamal/welcome" target="_blank">Areejit Samal</a>
+      <font color="green">
+      </font>
+
+      <!-- <br><div class="container"><marquee> <font color="red"> <strong> Disclaimer: </strong> 
+        The main goal of this database is to compile information from scientific 
+       literature on Indian medicinal plants to aid ongoing research efforts. 
+              The compiled data should be used only for research purposes and should 
+             not be used for any self diagnosis or medical treatment. 
+            </font> </marquee></div> -->
+      <div class="container center pt-1 mb-0" style="font-family:Roboto">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License"
+            style="border-width:0"
+            src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/88x31.png"></a><br>This
+        work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+          Attribution-NonCommercial 4.0 International License</a>.
+      </div>
+      <div class="credits"> Designed by R.P. Vivek-Ananth, M Karthikeyan and Ajaya Kumar Sahoo </div>
+    </div>
+  </footer>
+
+  <!-- <script src="/imppat/js/jquery-3.3.1.min.js" crossorigin="anonymous"></script> -->
+  <script src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/imppat.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/cytoscape.min.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/cytoscape-spread.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/cytoscapeqtip.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="IMPPAT%20IMPPAT%20Indian%20Medicinal%20Plants,%20Phytochemistry%20And%20Therapeutics_files/cytoscape-cola.js"
+    crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script src="/imppat/js/fancyTable.min.js" crossorigin="anonymous"></script> -->
+
+  <script type="text/javascript">
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    $(document).ready(function () {
+      $(".sampleTable").fancyTable({
+        sortColumn: 0,
+        pagination: true,
+        perPage: 10,
+        globalSearch: true
+      });
+    });
+
+  </script>
+
+
+
+  <iframe src='javascript:""' id="jsme"
+    style="position: absolute; width: 0px; height: 0px; border: medium none; left: -1000px; top: -1000px;"
+    tabindex="-1"></iframe>
+</body>
+
+</html>

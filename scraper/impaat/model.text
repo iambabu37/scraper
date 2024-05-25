@@ -1,0 +1,865 @@
+
+______SUMMARY_PAGE_________
+
+Phytochemical name:
+Synonymous chemical names:
+External chemical identifiers:
+SMILES:
+InChI:
+InChIKey:
+DeepSMILES:
+Functional groups:
+ClassyFire Kingdom:
+ClassyFire Superclass:
+ClassyFire Class:
+ClassyFire Subclass:
+NP Classifier Biosynthetic pathway:
+NP Classifier Superclass:
+NP Classifier Class:
+NP-Likeness score:
+
+
+______PHYSICOCHEMICAL_PAGE__________
+
+Molecular weight (g/mol) 
+Log P 
+Topological polar surface area (Å2) 
+Number of hydrogen bond acceptors 
+Number of hydrogen bond donors 
+Number of carbon atoms 
+Number of heavy atoms 
+Number of heteroatoms 
+Number of nitrogen atoms 
+Number of sulfur atoms 
+Number of chiral carbon atoms 
+Stereochemical complexity 
+Number of sp hybridized carbon atoms 
+Number of sp2 hybridized carbon atoms 
+Number of sp3 hybridized carbon atoms 
+Shape complexity 
+Number of rotatable bonds 
+Number of aliphatic carbocycles 
+Number of aliphatic heterocycles 
+Number of aliphatic rings 
+Number of aromatic carbocycles 
+Number of aromatic heterocycles 
+Number of aromatic rings 
+Total number of rings 
+Number of saturated carbocycles 
+Number of saturated heterocycles 
+Number of saturated rings 
+Number of Smallest Set of Smallest Rings (SSSR)
+
+_________DRUGLINKENESS_PROPERTIES_________
+
+Number of Lipinski’s rule of 5 violations 
+Lipinski’s rule of 5 
+Number of Ghose rule violations 
+Ghose rule 
+Veber rule 
+Egan rule 
+GSK 4/400 rule 
+Pfizer 3/75 rule 
+Weighted quantitative estimate of drug-likeness (QEDw) score 
+
+_______________ADME_PROPERTIES____________
+
+Bioavailability score 
+Solubility class [ESOL] 
+Solubility class [Silicos-IT] 
+Blood Brain Barrier permeation 
+Gastrointestinal absorption 
+Log Kp (Skin permeation, cm/s) 
+Number of PAINS structural alerts 
+Number of Brenk structural alerts 
+CYP1A2 inhibitor 
+CYP2C19 inhibitor 
+CYP2C9 inhibitor 
+CYP2D6 inhibitor 
+CYP3A4 inhibitor 
+P-glycoprotein substrate
+
+_________Predicted human target proteins____________
+
+
+Protein identifier
+HGNC symbol
+Combined score from STITCH database
+
+
+
+https://www.molport.com/shop/moleculelink/about-this-molecule/871940
+
+In [12]: type(babu)
+Out[12]: scrapy.selector.unified.SelectorList
+
+In [13]: lis = list()
+
+In [14]: ans = babu[0].css("td")
+
+In [15]: ans
+Out[15]: 
+[<Selector query='descendant-or-self::td' data='<td> Molecular weight (g/mol) </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 88.11 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Log P </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0.57 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Topological polar surface area (...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 26.3 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of hydrogen bond acceptor...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 2 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of hydrogen bond donors <...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of carbon atoms </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 4 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of heavy atoms </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 6 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of heteroatoms </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 2 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of nitrogen atoms </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of sulfur atoms </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of chiral carbon atoms </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Stereochemical complexity </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of sp hybridized carbon a...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of sp<sup>2</sup> hybridi...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 1 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of sp<sup>3</sup> hybridi...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 3 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Shape complexity </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0.75 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of rotatable bonds </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 2 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of aliphatic carbocycles ...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of aliphatic heterocycles...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of aliphatic rings </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of aromatic carbocycles <...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of aromatic heterocycles ...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of aromatic rings </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Total number of rings </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of saturated carbocycles ...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of saturated heterocycles...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of saturated rings </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>,
+ <Selector query='descendant-or-self::td' data='<td> Number of Smallest Set of Smalle...'>,
+ <Selector query='descendant-or-self::td' data='<td> <a href="http://www.rdkit.org/" ...'>,
+ <Selector query='descendant-or-self::td' data='<td> 0 </td>'>]
+
+In [16]: ans = babu[0].css("td").get()
+
+In [17]: ans
+Out[17]: '<td> Molecular weight (g/mol) </td>'
+
+In [18]: ans = babu[0].css("td"::text).get()
+  Cell In[18], line 1
+    ans = babu[0].css("td"::text).get()
+                          ^
+SyntaxError: invalid syntax
+
+
+In [19]: ans = babu[0].css("td::text").get()
+
+In [20]: ans
+Out[20]: ' Molecular weight (g/mol) '
+
+In [21]: ans = babu[0].css("td::text").getall()
+
+In [22]: ans
+Out[22]: 
+[' Molecular weight (g/mol) ',
+ ' ',
+ ' 88.11 ',
+ ' Log P ',
+ ' ',
+ ' 0.57 ',
+ ' Topological polar surface area (Å',
+ ') ',
+ ' ',
+ ' 26.3 ',
+ ' Number of hydrogen bond acceptors ',
+ ' ',
+ ' 2 ',
+ ' Number of hydrogen bond donors ',
+ ' ',
+ ' 0 ',
+ ' Number of carbon atoms ',
+ ' ',
+ ' 4 ',
+ ' Number of heavy atoms ',
+ ' ',
+ ' 6 ',
+ ' Number of heteroatoms ',
+ ' ',
+ ' 2 ',
+ ' Number of nitrogen atoms ',
+ ' ',
+ ' 0 ',
+ ' Number of sulfur atoms ',
+ ' ',
+ ' 0 ',
+ ' Number of chiral carbon atoms ',
+ ' ',
+ ' 0 ',
+ ' Stereochemical complexity ',
+ ' ',
+ ' 0 ',
+ ' Number of sp hybridized carbon atoms ',
+ ' ',
+ ' 0 ',
+ ' Number of sp',
+ ' hybridized carbon atoms ',
+ ' ',
+ ' 1 ',
+ ' Number of sp',
+ ' hybridized carbon atoms ',
+ ' ',
+ ' 3 ',
+ ' Shape complexity ',
+ ' ',
+ ' 0.75 ',
+ ' Number of rotatable bonds ',
+ ' ',
+ ' 2 ',
+ ' Number of aliphatic carbocycles ',
+ ' ',
+ ' 0 ',
+ ' Number of aliphatic heterocycles ',
+ ' ',
+ ' 0 ',
+ ' Number of aliphatic rings ',
+ ' ',
+ ' 0 ',
+ ' Number of aromatic carbocycles ',
+ ' ',
+ ' 0 ',
+ ' Number of aromatic heterocycles ',
+ ' ',
+ ' 0 ',
+ ' Number of aromatic rings ',
+ ' ',
+ ' 0 ',
+ ' Total number of rings ',
+ ' ',
+ ' 0 ',
+ ' Number of saturated carbocycles ',
+ ' ',
+ ' 0 ',
+ ' Number of saturated heterocycles ',
+ ' ',
+ ' 0 ',
+ ' Number of saturated rings ',
+ ' ',
+ ' 0 ',
+ ' Number of Smallest Set of Smallest Rings (SSSR) ',
+ ' ',
+ ' 0 ']
+
+In [23]: lis
+Out[23]: []
+
+In [24]: for i in range(2,len(ans),3):
+    ...:     lis.append(ans[i])
+    ...: 
+
+In [25]: lis
+Out[25]: 
+[' 88.11 ',
+ ' 0.57 ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' hybridized carbon atoms ',
+ ' Number of sp',
+ ' 3 ',
+ ' 0.75 ',
+ ' 2 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ']
+
+In [26]: len(ans)
+Out[26]: 87
+
+In [27]: ans = babu[0].css("td").getall()
+
+In [28]: ans
+Out[28]: 
+['<td> Molecular weight (g/mol) </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 88.11 </td>',
+ '<td> Log P </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0.57 </td>',
+ '<td> Topological polar surface area (Å<sup>2</sup>) </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 26.3 </td>',
+ '<td> Number of hydrogen bond acceptors </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 2 </td>',
+ '<td> Number of hydrogen bond donors </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of carbon atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 4 </td>',
+ '<td> Number of heavy atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 6 </td>',
+ '<td> Number of heteroatoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 2 </td>',
+ '<td> Number of nitrogen atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of sulfur atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of chiral carbon atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Stereochemical complexity </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of sp hybridized carbon atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of sp<sup>2</sup> hybridized carbon atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 1 </td>',
+ '<td> Number of sp<sup>3</sup> hybridized carbon atoms </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 3 </td>',
+ '<td> Shape complexity </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0.75 </td>',
+ '<td> Number of rotatable bonds </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 2 </td>',
+ '<td> Number of aliphatic carbocycles </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of aliphatic heterocycles </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of aliphatic rings </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of aromatic carbocycles </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of aromatic heterocycles </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of aromatic rings </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Total number of rings </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of saturated carbocycles </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of saturated heterocycles </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of saturated rings </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>',
+ '<td> Number of Smallest Set of Smallest Rings (SSSR) </td>',
+ '<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>',
+ '<td> 0 </td>']
+
+In [29]: len(ans)
+Out[29]: 84
+
+In [30]: ans.text
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Cell In[30], line 1
+----> 1 ans.text
+
+AttributeError: 'list' object has no attribute 'text'
+
+In [31]: ans.css("td::text").getall()
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Cell In[31], line 1
+----> 1 ans.css("td::text").getall()
+
+AttributeError: 'list' object has no attribute 'css'
+
+In [32]: for i in ans:
+    ...:     print(i)
+    ...: 
+<td> Molecular weight (g/mol) </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 88.11 </td>
+<td> Log P </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0.57 </td>
+<td> Topological polar surface area (Å<sup>2</sup>) </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 26.3 </td>
+<td> Number of hydrogen bond acceptors </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 2 </td>
+<td> Number of hydrogen bond donors </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of carbon atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 4 </td>
+<td> Number of heavy atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 6 </td>
+<td> Number of heteroatoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 2 </td>
+<td> Number of nitrogen atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of sulfur atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of chiral carbon atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Stereochemical complexity </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of sp hybridized carbon atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of sp<sup>2</sup> hybridized carbon atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 1 </td>
+<td> Number of sp<sup>3</sup> hybridized carbon atoms </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 3 </td>
+<td> Shape complexity </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0.75 </td>
+<td> Number of rotatable bonds </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 2 </td>
+<td> Number of aliphatic carbocycles </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of aliphatic heterocycles </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of aliphatic rings </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of aromatic carbocycles </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of aromatic heterocycles </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of aromatic rings </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Total number of rings </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of saturated carbocycles </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of saturated heterocycles </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of saturated rings </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+<td> Number of Smallest Set of Smallest Rings (SSSR) </td>
+<td> <a href="http://www.rdkit.org/" target="_blank">RDKit</a></td>
+<td> 0 </td>
+
+In [33]: ans = babu[0].css("td::text").getall()
+
+In [34]: len(ans)
+Out[34]: 87
+
+In [35]: for i in ans:
+    ...:     print(i)
+    ...: 
+ Molecular weight (g/mol) 
+ 
+ 88.11 
+ Log P 
+ 
+ 0.57 
+ Topological polar surface area (Å
+) 
+ 
+ 26.3 
+ Number of hydrogen bond acceptors 
+ 
+ 2 
+ Number of hydrogen bond donors 
+ 
+ 0 
+ Number of carbon atoms 
+ 
+ 4 
+ Number of heavy atoms 
+ 
+ 6 
+ Number of heteroatoms 
+ 
+ 2 
+ Number of nitrogen atoms 
+ 
+ 0 
+ Number of sulfur atoms 
+ 
+ 0 
+ Number of chiral carbon atoms 
+ 
+ 0 
+ Stereochemical complexity 
+ 
+ 0 
+ Number of sp hybridized carbon atoms 
+ 
+ 0 
+ Number of sp
+ hybridized carbon atoms 
+ 
+ 1 
+ Number of sp
+ hybridized carbon atoms 
+ 
+ 3 
+ Shape complexity 
+ 
+ 0.75 
+ Number of rotatable bonds 
+ 
+ 2 
+ Number of aliphatic carbocycles 
+ 
+ 0 
+ Number of aliphatic heterocycles 
+ 
+ 0 
+ Number of aliphatic rings 
+ 
+ 0 
+ Number of aromatic carbocycles 
+ 
+ 0 
+ Number of aromatic heterocycles 
+ 
+ 0 
+ Number of aromatic rings 
+ 
+ 0 
+ Total number of rings 
+ 
+ 0 
+ Number of saturated carbocycles 
+ 
+ 0 
+ Number of saturated heterocycles 
+ 
+ 0 
+ Number of saturated rings 
+ 
+ 0 
+ Number of Smallest Set of Smallest Rings (SSSR) 
+ 
+ 0 
+
+In [36]: lis = list()
+
+In [37]: for i in range(2,len(ans),3):
+    ...:     lis.append(ans[i])
+    ...: 
+
+In [38]: lis
+Out[38]: 
+[' 88.11 ',
+ ' 0.57 ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' ',
+ ' hybridized carbon atoms ',
+ ' Number of sp',
+ ' 3 ',
+ ' 0.75 ',
+ ' 2 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ']
+
+In [39]: every_third_column_values = babu.css('td:nth-child(3)::text').getall()
+    ...: 
+
+In [40]: every_third_column_values
+Out[40]: 
+[' 88.11 ',
+ ' 0.57 ',
+ ' 26.3 ',
+ ' 2 ',
+ ' 0 ',
+ ' 4 ',
+ ' 6 ',
+ ' 2 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 1 ',
+ ' 3 ',
+ ' 0.75 ',
+ ' 2 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' Passed ',
+ ' 3 ',
+ ' Failed ',
+ ' Good ',
+ ' Bad ',
+ ' Good ',
+ ' 0.4379 ',
+ ' 0.55 ',
+ ' Very soluble ',
+ ' Soluble ',
+ ' Yes ',
+ ' High ',
+ ' -6.32 ',
+ ' 0.0 ',
+ ' 0.0 ',
+ ' No ',
+ ' No ',
+ ' No ',
+ ' No ',
+ ' No ',
+ ' No ',
+ '700',
+ '800',
+ '700']
+
+In [41]: every_third_column_values = babu[0].css('td:nth-child(3)::text').getall()
+
+In [42]: every_third_column_values
+Out[42]: 
+[' 88.11 ',
+ ' 0.57 ',
+ ' 26.3 ',
+ ' 2 ',
+ ' 0 ',
+ ' 4 ',
+ ' 6 ',
+ ' 2 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 1 ',
+ ' 3 ',
+ ' 0.75 ',
+ ' 2 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ',
+ ' 0 ']
+
+In [43]: every_third_column_values = babu.css('td:nth-child(3)::text').getall()
+
+In [44]: len(every_third_column_values)
+Out[44]: 53
+
+In [45]: every_first_column_values = babu.css('td:nth-child(1)::text').getall()
+
+In [46]: every_first_column_values
+Out[46]: 
+[' Molecular weight (g/mol) ',
+ ' Log P ',
+ ' Topological polar surface area (Å',
+ ') ',
+ ' Number of hydrogen bond acceptors ',
+ ' Number of hydrogen bond donors ',
+ ' Number of carbon atoms ',
+ ' Number of heavy atoms ',
+ ' Number of heteroatoms ',
+ ' Number of nitrogen atoms ',
+ ' Number of sulfur atoms ',
+ ' Number of chiral carbon atoms ',
+ ' Stereochemical complexity ',
+ ' Number of sp hybridized carbon atoms ',
+ ' Number of sp',
+ ' hybridized carbon atoms ',
+ ' Number of sp',
+ ' hybridized carbon atoms ',
+ ' Shape complexity ',
+ ' Number of rotatable bonds ',
+ ' Number of aliphatic carbocycles ',
+ ' Number of aliphatic heterocycles ',
+ ' Number of aliphatic rings ',
+ ' Number of aromatic carbocycles ',
+ ' Number of aromatic heterocycles ',
+ ' Number of aromatic rings ',
+ ' Total number of rings ',
+ ' Number of saturated carbocycles ',
+ ' Number of saturated heterocycles ',
+ ' Number of saturated rings ',
+ ' Number of Smallest Set of Smallest Rings (SSSR) ',
+ ' Number of Lipinski’s rule of 5 violations ',
+ ' Lipinski’s rule of 5 filter ',
+ ' Number of Ghose filter violations ',
+ ' Ghose filter ',
+ ' Veber filter ',
+ ' Pfizer 3/75 filter ',
+ ' GSK 4/400 filter ',
+ ' Weighted quantitative estimate of drug-likeness (QEDw) score ',
+ ' Bioavailability score ',
+ ' Solubility class [ESOL] ',
+ ' Solubility class [Silicos-IT] ',
+ ' Blood Brain Barrier permeation ',
+ ' Gastrointestinal absorption ',
+ ' Log K',
+ ' (Skin permeation, cm/s) ',
+ ' Number of PAINS structural alerts ',
+ ' Number of Brenk structural alerts ',
+ ' CYP1A2 inhibitor ',
+ ' CYP2C19 inhibitor ',
+ ' CYP2C9 inhibitor ',
+ ' CYP2D6 inhibitor ',
+ ' CYP3A4 inhibitor ',
+ ' P-glycoprotein substrate ']
+
+ summary_values = response.css('.chem h5 strong::text').get()
+
+        # Extracting values from the Chemical structure information section
+        smiles = response.css('.chem strong:contains("SMILES") + text::text').get()
+        inchi = response.css('.chem strong:contains("InChI") + text::text').get()
+        inchi_key = response.css('.chem strong:contains("InChIKey") + text::text').get()
+        deep_smiles = response.css('.chem strong:contains("DeepSMILES") + text::text').get()
+        functional_groups = response.css('.chem strong:contains("Functional groups") + text::text').get()
+
+        # Extracting values from the Molecular scaffolds section
+        scaffold_graph_node_bond = response.css('.chem strong:contains("Scaffold Graph/Node/Bond level") + text::text').get()
+        scaffold_graph_node = response.css('.chem strong:contains("Scaffold Graph/Node level") + text::text').get()
+        scaffold_graph = response.css('.chem strong:contains("Scaffold Graph level") + text::text').get()
+
+        # Extracting values from the Chemical classification section
+        classyfire_kingdom = response.css('.chem strong:contains("ClassyFire Kingdom") + text::text').get()
+        classyfire_superclass = response.css('.chem strong:contains("ClassyFire Superclass") + text::text').get()
+        classyfire_class = response.css('.chem strong:contains("ClassyFire Class") + text::text').get()
+        classyfire_subclass = response.css('.chem strong:contains("ClassyFire Subclass") + text::text').get()
+        np_classifier_biosynthetic_pathway = response.css('.chem strong:contains("NP Classifier Biosynthetic pathway") + text::text').get()
+        np_classifier_superclass = response.css('.chem strong:contains("NP Classifier Superclass") + text::text').get()
+        np_classifier_class = response.css('.chem strong:contains("NP Classifier Class") + text::text').get()
+        np_likeness_score = response.css('.chem strong:contains("NP-Likeness score") + text::text').get()
+
+        # Now you can use or print these values as needed
+        print("Summary Values:", summary_values)
+        print("SMILES:", smiles)
+        print("InChI:", inchi)
+        print("InChIKey:", inchi_key)
+        print("DeepSMILES:", deep_smiles)
+        print("Functional Groups:", functional_groups)
+        print("Scaffold Graph/Node/Bond Level:", scaffold_graph_node_bond)
+        print("Scaffold Graph/Node Level:", scaffold_graph_node)
+        print("Scaffold Graph Level:", scaffold_graph)
+        print("ClassyFire Kingdom:", classyfire_kingdom)
+        print("ClassyFire Superclass:", classyfire_superclass)
+        print("ClassyFire Class:", classyfire_class)
+        print("ClassyFire Subclass:", classyfire_subclass)
+        print("NP Classifier Biosynthetic pathway:", np_classifier_biosynthetic_pathway)
+        print("NP Classifier Superclass:", np_classifier_superclass)
+        print("NP Classifier Class:", np_classifier_class)
+        print("NP Likeness Score:", np_likeness_score)

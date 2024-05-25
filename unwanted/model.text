@@ -1,0 +1,92 @@
+
+______SUMMARY_PAGE_________
+
+Phytochemical name:
+Synonymous chemical names:
+External chemical identifiers:
+SMILES:
+InChI:
+InChIKey:
+DeepSMILES:
+Functional groups:
+ClassyFire Kingdom:
+ClassyFire Superclass:
+ClassyFire Class:
+ClassyFire Subclass:
+NP Classifier Biosynthetic pathway:
+NP Classifier Superclass:
+NP Classifier Class:
+NP-Likeness score:
+
+
+______PHYSICOCHEMICAL_PAGE__________
+
+Molecular weight (g/mol) 
+Log P 
+Topological polar surface area (Å2) 
+Number of hydrogen bond acceptors 
+Number of hydrogen bond donors 
+Number of carbon atoms 
+Number of heavy atoms 
+Number of heteroatoms 
+Number of nitrogen atoms 
+Number of sulfur atoms 
+Number of chiral carbon atoms 
+Stereochemical complexity 
+Number of sp hybridized carbon atoms 
+Number of sp2 hybridized carbon atoms 
+Number of sp3 hybridized carbon atoms 
+Shape complexity 
+Number of rotatable bonds 
+Number of aliphatic carbocycles 
+Number of aliphatic heterocycles 
+Number of aliphatic rings 
+Number of aromatic carbocycles 
+Number of aromatic heterocycles 
+Number of aromatic rings 
+Total number of rings 
+Number of saturated carbocycles 
+Number of saturated heterocycles 
+Number of saturated rings 
+Number of Smallest Set of Smallest Rings (SSSR)
+
+_________DRUGLINKENESS_PROPERTIES_________
+
+Number of Lipinski’s rule of 5 violations 
+Lipinski’s rule of 5 
+Number of Ghose rule violations 
+Ghose rule 
+Veber rule 
+Egan rule 
+GSK 4/400 rule 
+Pfizer 3/75 rule 
+Weighted quantitative estimate of drug-likeness (QEDw) score 
+
+_______________ADME_PROPERTIES____________
+
+Bioavailability score 
+Solubility class [ESOL] 
+Solubility class [Silicos-IT] 
+Blood Brain Barrier permeation 
+Gastrointestinal absorption 
+Log Kp (Skin permeation, cm/s) 
+Number of PAINS structural alerts 
+Number of Brenk structural alerts 
+CYP1A2 inhibitor 
+CYP2C19 inhibitor 
+CYP2C9 inhibitor 
+CYP2D6 inhibitor 
+CYP3A4 inhibitor 
+P-glycoprotein substrate
+
+_________Predicted human target proteins____________
+
+
+Protein identifier
+HGNC symbol
+Combined score from STITCH database
+
+
+
+ziro
+icon

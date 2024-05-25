@@ -1,0 +1,53 @@
+---overview----
+
+Name //h1[@class='short']
+Pubchem_id //section[@id='Title-and-Summary']//div[@class='p-2 sm:table-row sm:border-0 ']/div[@class='text-left sm:table-cell sm:align-middle sm:p-2   pb-1 pl-2']
+Image 
+Molecular_formula
+Synonyms
+molecular_weight
+description
+
+//section[@id='Title-and-Summary']//div[@class='p-2 sm:table-row sm:border-0 ']/div[@class='text-left sm:table-cell sm:align-middle sm:p-2 pb-1 pl-2']  # PubChem CID
+//section[@id='Title-and-Summary']//div[@class='p-2 sm:table-row pc-gray-border-t sm:border-0 ']/div[@class='text-left sm:table-cell sm:align-middle sm:p-2 pb-1 pl-2']  # Molecular Formula
+//section[@id='Title-and-Summary']//div[@class='p-2 sm:table-row pc-gray-border-t sm:border-0 ']/div[@class='text-left sm:table-cell sm:align-middle sm:p-2 pb-1 pl-2']/div[@class='space-y-1']/div[@class='break-words space-y-1']  # Molecular Weight
+//section[@id='Title-and-Summary']//div[@class='p-2 sm:table-row pc-gray-border-t sm:border-0 ']/div[@class='text-left sm:table-cell sm:align-middle sm:p-2 sm:border-t sm:border-gray-300 dark:sm:border-gray-300/20 font-medium pt-1 sm:!align-top sm:w-1/4' and text()='Synonyms']/following-sibling::div[@class='text-left sm:table-cell sm:align-middle sm:p-2 sm:border-t sm:border-gray-300 dark:sm:border-gray-300/20 pb-1 pl-2']/div[@class='space-y-1']/ul[@class='break-words space-y-1 list-none leading-tight']/li  # Synonyms
+
+----Names_and_identifier------
+
+Iupac_name
+InChI      //section[@id='InChI' and @class='pt-4']//div[@class='break-words space-y-1']
+InChIKey  //section[@id='InChIKey' and @class='pt-4']//div[@class='break-words space-y-1']
+canonical_smiles
+chembl_id
+kegg_id
+
+---chemical_physical_properties---
+
+xlogp3
+hbond_donar
+hbond_acceptor
+rotatable_bond
+exact_mass
+Topological_surface_area
+heavy_atom_count
+formal_charge
+isotope_atoms_counts
+covalentl_bond
+
+---physical_properties---
+
+boiling_point
+melting_point
+density
+logp
+pka
+
+----Human_metabolite----
+
+Tissue_location
+celurlar_location
+
+
+
+
